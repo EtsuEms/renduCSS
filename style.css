@@ -1,19 +1,40 @@
 body{
     background-color: black;
+    color:white;
+    font-family:"DM Sans", sans-serif;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
+
+/* Style boutons general */
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+/* Style boutons secondaires */
+.secondary {
+    color: black;
+    background-color: white;
+} 
+
+
 
 header {
     background-image: url('Assets/image-header.png');
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     font-family:"DM Sans", sans-serif;
 
     nav{
-        padding: 50px;
+        padding: 20px;
 
         li{
             padding-right: 30px;
@@ -34,41 +55,97 @@ header {
     }
 }
 
- 
-.section-hero{
-    text-align: center;
-    
-    color: white;
-    margin: auto;
-        width:600xpx;
-        margin-top: 14vh;
-
-
-    div{
-        
-
-        h1{
-            font-size: 160px;
-            font-weight: regular;
-
-            span{
-                display: block;
-                font-style: medium;
-                font-size: 53px;
-            }
-            
-        }
-        
-        h2{
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .btn {
-            color: white;
-            background-color: black;
-        }
-
-    }
+.sectionPadding{
+    padding-block: 120px;
+    padding-inline: 30px;
 
 }
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+ 
+#sectionHero{
+    text-align: justify;
+    color: white; 
+   
+    h1{
+        font-size: 160px;
+        font-weight: regular;
+
+        span{
+            display: block;
+            font-style: medium;
+            font-size: 53px;
+        }   
+    }
+        
+    h2{
+        font-size: 28px;
+        font-weight: bold;
+    }
+        
+}
+ 
+
+#sectionPresentation{
+    
+    text-align: justify;
+    color: white;
+    width: 600px;
+    margin: auto;
+    .sectionPadding{
+        padding-block: 70px;
+    }
+    
+    h2{
+        font-size: 48px;
+        font-weight: regular;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: regular;
+    }
+}
+
+#section-image{
+    img{
+        width: 100%;
+    }
+} 
+
+#sectionLineup{
+    font-weight: bold;
+
+    h2{
+        text-align: center;
+        font-size: 36px;
+
+    }
+        
+
+    li{
+        font-size: 28px;
+        list-style: none;
+        border-top: 1px dashed;
+    }
+
+    .containerBtn{
+        text-align: center;
+        margin-top: 90px;
+    }
+    
+    
+}
+
+#sectionSponsor{
+    background-image: url('Assets/banniere-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+
+
